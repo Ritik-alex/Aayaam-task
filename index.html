@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/NITT_logo.png" alt="Members Logo" class="logo">
+        <h1>National Institute of Technology, Tiruchirappalli</h1>
+    </header>
+
+    <section class="filter-section">
+        <div id="container">
+            <div class="theme">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/002/371/177/small_2x/group-of-ten-people-logo-in-a-circle-persons-teamwork-holding-free-vector.jpg" alt="Members Logo" class="logo">
+                <h1>Aayaam Club</h1>
+            </div>
+            <div class="filter">
+                <label for="categoryFilter">Category:</label>
+                <select id="categoryFilter" class="filter-dropdown">
+                    <option value="all">All Members</option>
+                    <option value="core">Core Team</option>
+                    <option value="alumni">Alumni</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>    
+            <div class="filter">
+                <label for="sortFilter">Sort By:</label>
+                <select id="sortFilter" class="filter-dropdown">
+                    <option value="name">Sort by Name</option>
+                    <option value="role">Sort by Role</option>
+                </select>
+            </div>
+        </div>    
+    </section>
+
+    <section id="membersSection" class="members-section"></section>
+
+    <template id="memberTemplate">
+        <div class="member-card">
+            <img src="" alt="Profile Image" class="profile-img">
+            <div class="member-info">
+                <h2 class="member-name"></h2>
+                <p class="member-role"></p>
+                <p class="member-description"></p>
+            </div>
+        </div>
+    </template>
+    <footer class="footer">
+        <p>Developed by Ritik Kumar Jha</p>
+    </footer>    
+    <script src="script.js"></script>
+</body>
+</html>
